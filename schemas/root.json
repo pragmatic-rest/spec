@@ -1,4 +1,45 @@
 {
   "title": "Root Schema",
+  "description": "This is the backbone of pragmatic.rest",
   "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "specVersion": {
+      "required": true,
+      "type": "string",
+      "description": "The specification version used - semver format"
+    },
+    "baseUri": {
+      "required": true,
+      "type": "uri",
+      "description": "Eg: https://api.example.com/"
+    },
+    "version": {
+      "required": true,
+      "type": "string",
+      "description": "Users api version - the value inserted into the uri"
+    },
+    "resources": {
+      "required": true,
+      "type": "array",
+      "items": {
+        "$ref": "LINK"
+      }
+    },
+    "name": {
+      "type": "string",
+      "description": "Name your api - example's super duper awsome api"
+    },
+    "description": {
+      "type": "string",
+      "description": "Describe your api, what are it's hopes and dreams?"
+    },
+    "license": {
+      "type": "string",
+      "description": "Does the api come with a license?"
+    },
+    "auth": {
+      "description": "Describe the authenication method used"
+    }
+  }
 }
