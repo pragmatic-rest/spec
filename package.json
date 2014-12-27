@@ -1,0 +1,11 @@
+{
+  "name": "pragmatic-rest-spec",
+  "version": "0.0.0",
+  "description": "The specification created and adhered by when using pragmatic.rest",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brian Mullan <bmullan91@gmail.com>",
+  "license": "MIT"
+}

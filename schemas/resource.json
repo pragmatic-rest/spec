@@ -1,0 +1,38 @@
+{
+  "title": "Resource schema",
+  "description": "The representation of a 'resource' can be anything, eg a users resource",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "path": {
+      "required": true,
+      "type": "string",
+      "description": "The base uri + version + resource path -> resource location"
+    },
+    "description": {
+      "required": true,
+      "type": "string",
+      "description": "Describe this resource here"
+    },
+    "contentType": {
+      "required": true,
+      "type": "string",
+      "description": "What is the resource data format? E.g. application/json"
+    },
+    "model": {
+      "$ref": "LINK"
+    },
+    "authRequired": {
+      "type": "boolean"
+    },
+    "methods": {
+      "type": "object",
+      "properties": {
+        "GET": { "$ref": "LINK" },
+        "PUT": { "$ref": "LINK" },
+        "POST": { "$ref": "LINK" },
+        "DELETE": { "$ref": "LINK" },
+      }
+    }
+  }
+}

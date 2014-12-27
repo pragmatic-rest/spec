@@ -1,0 +1,41 @@
+{
+  "title": "HTTP Method schema",
+  "description": "Describes how a http-method acts upon a resource",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "method": {
+      "required": true,
+      "type": "string",
+      "description": "See http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html",
+      "enum": [
+        "GET", 
+        "PUT", 
+        "POST", 
+        "DELETE"
+      ]
+    },
+    "description": {
+      "$ref": "LINK"
+    },
+    "parameters": {
+      "type": "array",
+      "items": {
+        "$ref": "LINK"
+      }
+    },
+    "requests": {
+      "type": "array",
+      "items": {
+        "$ref": "LINK"
+      }
+    },
+    "responses": {
+      "type": "array",
+      "items": {
+        "$ref": "LINK"
+      }
+    }
+  }
+
+}
