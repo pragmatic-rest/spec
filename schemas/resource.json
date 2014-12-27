@@ -20,7 +20,7 @@
       "description": "What is the resource data format? E.g. application/json"
     },
     "model": {
-      "$ref": "LINK"
+      "$ref": "https://raw.githubusercontent.com/pragmatic-rest/spec/master/schemas/shared/model.json"
     },
     "authRequired": {
       "type": "boolean"
@@ -28,10 +28,10 @@
     "methods": {
       "type": "object",
       "properties": {
-        "GET": { "$ref": "LINK" },
-        "PUT": { "$ref": "LINK" },
-        "POST": { "$ref": "LINK" },
-        "DELETE": { "$ref": "LINK" },
+        "GET": { "$ref": "https://raw.githubusercontent.com/pragmatic-rest/spec/master/schemas/method.json" },
+        "PUT": { "$ref": "https://raw.githubusercontent.com/pragmatic-rest/spec/master/schemas/method.json" },
+        "POST": { "$ref": "https://raw.githubusercontent.com/pragmatic-rest/spec/master/schemas/method.json" },
+        "DELETE": { "$ref": "https://raw.githubusercontent.com/pragmatic-rest/spec/master/schemas/method.json" }
       }
     }
   }

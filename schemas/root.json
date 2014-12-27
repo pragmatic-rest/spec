@@ -23,7 +23,7 @@
       "required": true,
       "type": "array",
       "items": {
-        "$ref": "LINK"
+        "$ref": "https://raw.githubusercontent.com/pragmatic-rest/spec/master/schemas/resource.json"
       }
     },
     "name": {
@@ -31,8 +31,7 @@
       "description": "Name your api - example's super duper awsome api"
     },
     "description": {
-      "type": "string",
-      "description": "Describe your api, what are it's hopes and dreams?"
+      "$ref": "https://raw.githubusercontent.com/pragmatic-rest/spec/master/schemas/shared/description.json"
     },
     "license": {
       "type": "string",

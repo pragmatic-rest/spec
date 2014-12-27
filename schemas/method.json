@@ -16,24 +16,24 @@
       ]
     },
     "description": {
-      "$ref": "LINK"
+      "$ref": "https://raw.githubusercontent.com/pragmatic-rest/spec/master/schemas/shared/description.json"
     },
     "parameters": {
       "type": "array",
       "items": {
-        "$ref": "LINK"
+        "$ref": "https://raw.githubusercontent.com/pragmatic-rest/spec/master/schemas/parameter.json"
       }
     },
     "requests": {
       "type": "array",
       "items": {
-        "$ref": "LINK"
+        "$ref": "https://raw.githubusercontent.com/pragmatic-rest/spec/master/schemas/request.json"
       }
     },
     "responses": {
       "type": "array",
       "items": {
-        "$ref": "LINK"
+        "$ref": "https://raw.githubusercontent.com/pragmatic-rest/spec/master/schemas/response.json"
       }
     }
   }

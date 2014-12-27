@@ -23,7 +23,7 @@
       ]
     },
     "description": {
-      "$ref": "LINK"
+      "$ref": "https://raw.githubusercontent.com/pragmatic-rest/spec/master/schemas/shared/description.json"
     },
     "default": {
       "type": "any",
