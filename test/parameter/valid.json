@@ -1,0 +1,10 @@
+{
+  "name": "age",
+  "required": true,
+  "type": "number",
+  "description": {
+    "short": "Your age",
+    "long": "Your full age..."
+  },
+  "default": 0
+}
