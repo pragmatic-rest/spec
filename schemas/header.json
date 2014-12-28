@@ -3,14 +3,17 @@
   "description": "Describes a request on a resource",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
+  "required": [
+    "name"
+  ],
   "properties": {
     "name": {
-      "required": true,
       "type": "string",
       "description": "The name of the header e.g. X-MyHeader"
     },
     "required": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "type": {
       "type": "string",
@@ -26,7 +29,6 @@
       "$ref": "https://raw.githubusercontent.com/pragmatic-rest/spec/master/schemas/shared/description.json"
     },
     "default": {
-      "type": "any",
       "description": "A defualt value, if no given value"
     }
   }

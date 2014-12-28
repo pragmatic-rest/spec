@@ -1,0 +1,10 @@
+{
+  "name": "X-MyHeader",
+  "required": true,
+  "type": "string",
+  "description": {
+    "short": "Simple header",
+    "long": "This header is for something.."
+  },
+  "default": ""
+}
