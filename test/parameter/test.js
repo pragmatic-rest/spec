@@ -4,11 +4,11 @@ var schema = require('../../schemas/header.json');
 
 describe('Parameter tests', function() {
 
-  it('should should accept valid json', function() {
+  it('should accept valid json', function() {
     expect(tv4.validate(require('./valid.json'), schema)).to.be.true;
   });
 
-  it('should should reject invalid json', function() {
+  it('should reject invalid json', function() {
     expect(tv4.validate(require('./invalid.json'), schema)).to.be.false;
   });
 
