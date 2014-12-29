@@ -1,0 +1,10 @@
+{
+  "contentType": "application/json",
+  "headers": [],
+  "statusCode": 200,
+  "body": "",
+  "description": {
+    "short": "This is a valid request - to say, update something.",
+    "long": "Describe what this is for - how to combine parameters etc."
+  }
+}
