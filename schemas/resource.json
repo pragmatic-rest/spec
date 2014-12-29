@@ -3,19 +3,21 @@
   "description": "The representation of a 'resource' can be anything, eg a users resource",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
+  "required": [
+    "path",
+    "description",
+    "contentType",
+    "methods"
+  ],
   "properties": {
     "path": {
-      "required": true,
       "type": "string",
       "description": "The base uri + version + resource path -> resource location"
     },
     "description": {
-      "required": true,
-      "type": "string",
-      "description": "Describe this resource here"
+      "$ref": "https://raw.githubusercontent.com/pragmatic-rest/spec/master/schemas/shared/description.json"
     },
     "contentType": {
-      "required": true,
       "type": "string",
       "description": "What is the resource data format? E.g. application/json"
     },
@@ -23,15 +25,15 @@
       "$ref": "https://raw.githubusercontent.com/pragmatic-rest/spec/master/schemas/shared/model.json"
     },
     "authRequired": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "methods": {
-      "type": "object",
-      "properties": {
-        "GET": { "$ref": "https://raw.githubusercontent.com/pragmatic-rest/spec/master/schemas/method.json" },
-        "PUT": { "$ref": "https://raw.githubusercontent.com/pragmatic-rest/spec/master/schemas/method.json" },
-        "POST": { "$ref": "https://raw.githubusercontent.com/pragmatic-rest/spec/master/schemas/method.json" },
-        "DELETE": { "$ref": "https://raw.githubusercontent.com/pragmatic-rest/spec/master/schemas/method.json" }
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/pragmatic-rest/spec/master/schemas/method.json"
       }
     }
   }

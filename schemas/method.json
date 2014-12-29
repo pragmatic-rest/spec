@@ -3,9 +3,11 @@
   "description": "Describes how a http-method acts upon a resource",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
+  "required": [
+    "method"
+  ],
   "properties": {
     "method": {
-      "required": true,
       "type": "string",
       "description": "See http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html",
       "enum": [
@@ -20,18 +22,21 @@
     },
     "parameters": {
       "type": "array",
+      "default": [],
       "items": {
         "$ref": "https://raw.githubusercontent.com/pragmatic-rest/spec/master/schemas/parameter.json"
       }
     },
     "requests": {
       "type": "array",
+      "default": [],
       "items": {
         "$ref": "https://raw.githubusercontent.com/pragmatic-rest/spec/master/schemas/request.json"
       }
     },
     "responses": {
       "type": "array",
+      "default": [],
       "items": {
         "$ref": "https://raw.githubusercontent.com/pragmatic-rest/spec/master/schemas/response.json"
       }
