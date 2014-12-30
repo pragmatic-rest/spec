@@ -1,0 +1,12 @@
+{
+  "path": "/users",
+  "contentType": "application/json",
+  "authRequired": true,
+  "methods": [{
+    "method": "GET",
+    "description": {},
+    "parameters": [],
+    "requests": [],
+    "responses": []
+  }]
+}
