@@ -23,7 +23,7 @@
       "description": "Does the request send any data via the body?"
     },
     "description": {
-      "$ref": "https://raw.githubusercontent.com/pragmatic-rest/spec/master/schemas/shared/description.json"
+      "$ref": "https://raw.githubusercontent.com/pragmatic-rest/spec/master/schemas/description.json"
     }
   }
 }

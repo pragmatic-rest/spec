@@ -18,7 +18,7 @@
       ]
     },
     "description": {
-      "$ref": "https://raw.githubusercontent.com/pragmatic-rest/spec/master/schemas/shared/description.json"
+      "$ref": "https://raw.githubusercontent.com/pragmatic-rest/spec/master/schemas/description.json"
     },
     "parameters": {
       "type": "array",

@@ -15,14 +15,14 @@
       "description": "The base uri + version + resource path -> resource location"
     },
     "description": {
-      "$ref": "https://raw.githubusercontent.com/pragmatic-rest/spec/master/schemas/shared/description.json"
+      "$ref": "https://raw.githubusercontent.com/pragmatic-rest/spec/master/schemas/description.json"
     },
     "contentType": {
       "type": "string",
       "description": "What is the resource data format? E.g. application/json"
     },
     "model": {
-      "$ref": "https://raw.githubusercontent.com/pragmatic-rest/spec/master/schemas/shared/model.json"
+      "$ref": "https://raw.githubusercontent.com/pragmatic-rest/spec/master/schemas/model.json"
     },
     "authRequired": {
       "type": "boolean",
