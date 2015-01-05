@@ -2,6 +2,10 @@
   "path": "/users",
   "contentType": "application/json",
   "authRequired": true,
+  "description": {
+    "short": "The users resource",
+    "long": "User's resource represents the collection of users"
+  },
   "methods": [{
     "method": "GET",
     "description": {},

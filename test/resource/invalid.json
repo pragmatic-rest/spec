@@ -2,6 +2,6 @@
   "path": "/users",
   "contentType": "application/json",
   "authRequired": true,
-  "model": "",
+  "description": {},
   "methods": []
 }
