@@ -1,15 +1,15 @@
+var test = require('pr-spec-test');
 var expect = require('chai').expect;
-var tv4 = require('tv4');
-var schema = require('../../schemas/request.json');
+var schema = require('..');
 
-describe('Request tests', function() {
+describe('Method tests', function() {
 
   it('should accept valid json', function() {
-    expect(tv4.validate(require('./valid.json'), schema)).to.be.true;
+    expect(test.validate(require('./valid.json'), schema)).to.be.true;
   });
 
   it('should reject invalid json', function() {
-    expect(tv4.validate(require('./invalid.json'), schema)).to.be.false;
+    expect(test.validate(require('./invalid.json'), schema)).to.be.false;
   });
 
 });

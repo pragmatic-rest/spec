@@ -1,0 +1,20 @@
+{
+  "name": "pr-spec-request",
+  "version": "0.0.0",
+  "description": "Request component of the pragmatic.rest spec",
+  "main": "schema.json",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha",
+    "debug": "node-debug node_modules/.bin/_mocha",
+    "coverage": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --report lcovonly -- -R spec",
+    "coveralls": "npm run coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
+  },
+  "author": "Brian Mullan <bmullan91@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "~2.1.0",
+    "chai": "~1.10.0",
+    "istanbul": "^0.3.8",
+    "pr-spec-test": "0.0.0"
+  }
+}
