@@ -2,7 +2,7 @@
   "name": "pr-spec-description",
   "version": "0.0.0",
   "description": "Description component of the pragmatic.rest spec",
-  "main": "schema.json",
+  "main": "schema.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha",
     "debug": "node-debug node_modules/.bin/_mocha",
