@@ -2,7 +2,7 @@
   "name": "pr-spec-method",
   "version": "0.0.0",
   "description": "Method component of the pragmatic.rest spec",
-  "main": "schema.json",
+  "main": "schema.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha",
     "debug": "node-debug node_modules/.bin/_mocha",
@@ -16,5 +16,11 @@
     "chai": "~1.10.0",
     "istanbul": "^0.3.8",
     "pr-spec-test": "0.0.0"
+  },
+  "dependencies": {
+    "pr-spec-description": "0.0.0",
+    "pr-spec-parameter": "0.0.0",
+    "pr-spec-request": "0.0.0",
+    "pr-spec-response": "0.0.0"
   }
 }

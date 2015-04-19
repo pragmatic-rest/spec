@@ -1,3 +1,1 @@
 # pr-spec-method
-
-TODO
