@@ -2,5 +2,4 @@
 
 TODO
 
- - tests 
- - proper examples
+  - Test using a proper schema url

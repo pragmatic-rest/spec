@@ -1,0 +1,7 @@
+{
+	"schema": "http://api.example.com/v1/users/schema.json",
+	"example": {
+		"name": "Jimmy Joe",
+		"age": "44"
+	}
+}
