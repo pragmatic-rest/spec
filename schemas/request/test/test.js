@@ -2,7 +2,7 @@ var test = require('pr-spec-test');
 var expect = require('chai').expect;
 var schema = require('..');
 
-describe('Method tests', function() {
+describe('Request tests', function() {
 
   it('should accept valid json', function() {
     expect(test.validate(require('./valid.json'), schema)).to.be.true;
