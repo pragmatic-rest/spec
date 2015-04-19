@@ -1,6 +1,6 @@
 {
   "name": "pr-spec-resource",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Resource component of the pragmatic.rest spec",
   "main": "schema.js",
   "scripts": {
